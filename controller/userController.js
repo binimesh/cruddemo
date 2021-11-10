@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 
-const User = require("../database/models/User");
+const User = require("../models/User");
 const {registrationValidation,login} = require("../middleware/validation");
 
 //signup
@@ -30,7 +30,8 @@ const createUserObj = async (req) => {
     };
 }
 
-
+//validation to be changed to middleware.
+//dboperation can be specifed as services folder.
 // login
 const logIn = async (req, res) => {
     const { error } = loginValidation(req.body);
