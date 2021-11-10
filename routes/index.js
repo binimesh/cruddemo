@@ -2,11 +2,11 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const mongoose = require("./helpers/db");
-const userRoute = require("./routes/user");
-const authRoute = require("./routes/auth");
-const productRoute = require("./routes/product");
-const cartRoute = require("./routes/cart");
-const orderRoute = require("./routes/order");
+const userRoute = require("./user");
+const authRoute = require("./auth");
+const productRoute = require("./product");
+const cartRoute = require("./cart");
+const orderRoute = require("./order");
 
 app.use(cors());
 app.use(express.json());

@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-const User = require("../models/Cart");
+const User = require("../database/models/Cart");
 const { registerValidation, loginValidation } = require("../middleware/validation");
 const JWT_KEY = process.env.JWT_KEY;
 
