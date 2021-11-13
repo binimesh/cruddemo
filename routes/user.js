@@ -5,6 +5,8 @@ const { verifyUser, verifyAdmin } = require("../middleware/verifyToken");
 
 router.post("/", userController.signUp);
 
+router.post("/")
+
 router.post("/login", userController.logIn);
 
 router.post("/password/forgot", userController.forgotPassword);
